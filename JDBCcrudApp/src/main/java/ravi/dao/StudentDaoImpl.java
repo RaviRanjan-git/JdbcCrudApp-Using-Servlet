@@ -45,7 +45,7 @@ public class StudentDaoImpl implements IStudentDao {
 
 	@Override
 	public Student searchStudent(Integer sid) {
-		String sqlSelectQuery = "select id,name,age,address from student where id = ?";
+		String sqlSelectQuery = "select sid,sname,sage,saddress from student where sid = ?";
 		Student student = null;
 
 		try {
